@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="t1.css" type="text/css">
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.5.1.min.js'></script>
+
+<script type='text/javascript'>
+$(document).ready(function(){
+	$('#menu a').live('click',function(){
+		$('#conteudo').load($(this).attr('href'));
+		return false;
+	});
+});
+
+</script>
+
+</head>
+
+<body>
+<div id='geral'>
+    <div id='menu' >
+    
+        <ul>
+        
+         <li><a href='page.php?cod=1'>Home</a></li>
+        
+         <li><a href='page.php?cod=2'>Noticias</a></li>
+        
+        </ul>
+    
+    </div>
+
+    <!-- Aqui serão mostrados os conteúdos -->
+    
+    <div id='conteudo'>
+    
+    <h1>Conteudo</h1>
+    
+    </div>
+</div>
+</body>
+
+</html>

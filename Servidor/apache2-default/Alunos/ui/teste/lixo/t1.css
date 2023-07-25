@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:Calibri, Tahoma, Arial
+} 
+/********************************************
+              CENTRAL
+*********************************************/
+#geral{ 
+	width:1280px;
+	height:720px;
+	overflow:hidden; /* não apresenta barra de rolagem */
+	background-color:#ccc;
+	margin:0 auto;
+	
+} 
+
+/********************************************
+              botoes
+*********************************************/
+#menu{ 
+	width:290px;
+	height:720px;
+	overflow:hidden; /* não apresenta barra de rolagem */
+	background-color:#9CF;
+	float:left;
+} 
+
+/********************************************
+              questão
+*********************************************/
+#conteudo{ 
+	width:970px;
+	height:620px;
+	overflow:auto; /* apresenta barra de rolagem se necessario */
+	background-color:#FCC;
+	float:left;
+} 

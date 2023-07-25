@@ -1,0 +1,524 @@
+@charset "utf-8";
+/* CSS Document
+CSS do SGEW  estilo usado no APC
+ */
+body{
+	background-color:#F4F4F4;
+	border:0px;
+	margin:0px;
+	margin-top:3px;
+	padding:0px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#555;
+    font-weight:normal;
+	text-align:justify;
+}
+
+#nucleo{
+	background-color:#F4F4F4;
+	border:0px;
+	margin:0px;
+	margin-top:3px;
+	padding:0px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+    color:#555;
+	font-weight:normal;
+	text-align:justify;
+}
+
+.menu
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    color: #000033;
+    background-color: #D0D0D0;
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-left: 0px solid #FFFF00;
+    -moz-border-radius: 0px 27px 0px 10px;
+    padding: 5px;
+    cursor: hand;
+}
+
+.menu-sel
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #000035;
+    background-color: #FFFFFF;
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;
+    border-left: 0px solid #FFFF00;
+    -moz-border-radius: 0px 27px 0px 10px;
+    padding: 5px;
+    cursor: hand;
+}
+
+.conteudo
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #000033;
+    background-color: #FFFFFF;
+    padding: 5px;
+    width: 770px;
+    height: 100%;
+}
+
+.textbox {
+    border: 1px solid #D0D0D0;
+	vertical-align: middle;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.container{
+    background-color:#FFFFFF;
+    width: 800px;
+    margin:auto;
+    height: 100%;
+    border:1px solid #B3D9FF;
+}
+
+#descricao{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:11px;
+    color:#000033;
+}
+
+#erro{
+	width:100%;
+	margin-top:30px;
+	text-align:center;
+    font-weight:bold;
+}
+
+p{
+	padding:0px;
+	margin:0px;
+}
+
+div{
+	padding:0px;
+	margin:0px;
+}
+
+.titulo{
+	padding:4px;
+	text-align:center;
+	font-size:11px;
+	font-weight:bold;
+}
+
+.parecer{
+
+    border:1px solid #909090;
+    border-bottom:3px solid #909090;
+    border-right:4px solid #909090;
+    -moz-border-radius: 27px 27px 10px 10px;
+    font-size:11px;
+    color:#606060;
+
+}
+
+#tabela1{
+    margin:auto;
+    width:700px;
+    font-size:14px;
+    background-color: #F3F3F3;
+}
+
+#cabecalho1{
+    margin:auto;
+    width:770px;
+    font-size:14px;
+    background-color: #B3D9FF;
+    border:1px solid #B3D9FF;
+}
+#cabecalho2{
+    margin:auto;
+    width:700px;
+    font-size:14px;
+    background-color: #CEE7FF;
+}
+
+#formulario1{
+    padding:14px;
+    font-size:12px;
+    border:1px solid #B3D9FF;
+    background-color:#FFFFFF;
+}
+
+#formulario2{
+    margin:auto;
+    width:770px;
+    border:1px solid #B3D9FF;
+    background-color:#FFFFFF;
+}
+
+#formularioItem1{
+    padding:10px;
+    font-size:12px;
+}
+
+
+
+#alerta1{
+    color:#FF4646;
+    font-size:12px;
+}
+
+#titulo1{
+    padding:10px;
+    border-bottom:1px solid #909090;
+    text-align:center;
+    font-size:12px;
+
+}
+
+#titulo2{
+    padding:10px;
+    text-align:center;
+    font-size:18px;
+}
+
+#padraoUm{
+    margin:auto;
+    padding:10px;
+    border:1px solid #D0D0D0;
+    text-align:left;
+    font-size:12px;
+    color:#606060;
+    width:400px;
+}
+
+#recomendada{
+  	padding:6px;
+  	border-bottom:1px solid #D0D0D0;
+    text-align:left;
+    font-size:12px;
+    color:#606060;
+}
+
+#executada{
+  	padding:6px;
+    border-bottom:1px solid #D0D0D0;
+    text-align:left;
+    font-size:12px;
+    color:#606060;
+}
+
+#rodape{
+    text-align:left;
+    font-size:10px;
+}
+
+.caixa{
+    background-image:url(../imagens/grd-4px.gif);
+    border:1px solid #ccc;
+    border-bottom:2px solid #ccc;
+    border-right:2px solid #ccc;
+}
+
+#corpo{
+	width:770px;
+	margin:auto;	
+	height:auto;
+}
+
+<!--[if IE]> -->
+  #corpo{
+	
+	width:770px;
+	margin-left:20%;
+	height:auto;
+  }	
+    
+<!-- <[endif]-->
+
+#divmenu{
+  display:none;
+
+}
+
+
+
+#topo{
+
+	width:100%;
+
+	text-align:right;
+
+}
+
+#conteudo{
+
+	width:100%;
+
+}
+
+<!--[if IE]> -->
+
+  #conteudo{
+
+	width:100%;
+	margin-right:20%
+	
+
+  }
+
+  
+<!-- <[endif]-->
+
+#barra{
+    position:inherit;
+	width:100%;
+	height:20px;
+}
+
+#caixaDisciplina{
+	overflow: scroll;
+	height: 400px;
+	width: 300px;
+
+	
+	
+}
+
+#listaItem {
+	position:absolute;
+	left: 42%;
+	top:105px;
+	width:470px;
+	height:200px;
+	margin:auto;
+	
+
+}
+
+#detalheItem{
+    position:absolute;
+	top:295px;
+	left: 42%;
+	width:470px;
+	height:300px;
+
+}
+
+#caixaEditor{
+     position:absolute;
+	 width:100%;
+	 height:auto;
+}
+
+
+#menu{
+
+	
+
+	padding:0px;
+
+	font-size:11px;
+
+}
+
+#menu ul{
+
+	list-style:none;
+
+	margin:0px;
+
+    padding:0px;	
+
+	font-weight: bold;
+
+}
+
+#menu li{
+
+	padding-top:8px;
+
+	padding-left:15px;
+
+}
+
+a{
+
+	text-decoration: none;
+
+	color:#555;
+
+	width:100%;
+
+}
+
+
+
+a:hover{
+
+	text-decoration:underline;
+
+}
+
+.mostraObj{
+
+	display: true;
+
+}
+
+.ocultaObj{
+
+	display: none;
+
+}
+
+.tableLinha th{
+
+	border-top:1px solid #ccc;
+
+	border-bottom:1px solid #ccc;
+
+}
+
+.tableLinha td{
+
+	border-bottom:1px solid #ccc;
+
+}
+
+
+
+#personal input{
+
+	font-size:9px;
+
+	border:1px solid #CCCCCC;
+
+	border-bottom:2px solid #ccc;
+
+	border-right:2px solid #ccc;
+
+	background-color:#FFFFFF;
+
+}
+
+
+
+#personal select{
+
+	font-size:9px;
+
+	border:1px solid #CCCCCC;
+
+	border-bottom:2px solid #ccc;
+
+	border-right:2px solid #ccc;
+
+	background-color:#FFFFFF;
+
+}
+
+
+
+
+
+#personal #titulo{
+
+	font-size:11px;
+
+	color:#FF0000;
+
+	font-weight:bold;
+
+	padding:2px;
+
+	text-align:center;
+
+	margin-top: 10px;
+
+}
+
+
+
+#pud p{
+
+	margin-bottom:10px;
+
+}
+
+#pud #pai{
+
+	margin-left:20px;
+
+}
+
+#pud #filho{
+
+	margin-left:20px;
+
+}
+
+#pud #neto{
+
+	margin-left:20px;
+
+}
+
+#pud a{
+
+	color: #ff0000;
+
+	text-decoration: none;
+
+	font-weight: bold;
+
+}
+
+#pud a:hover{
+
+	color: #0066CC;
+
+}
+
+
+
+#downloads ul{
+
+	margin:0px;
+
+	list-style:none;
+
+}
+
+
+
+#downloads ul li{
+
+	padding:5px;
+
+	padding-bottom:15px;
+
+}
+
+
+
+#popup{
+position: absolute; /*Define a posição absoluta da pop-up*/
+top: 30%; /*Distancia da margem superior da página */
+left: 30%; /*Distancia da margem esquerda da página */
+width: 300px; /*Largura da pop-up*/
+height: 100px; /*Altura da pop-up*/
+padding: 20px 20px 20px 20px; /*Margem interna da pop-up*/
+border-width: 1px; /*Largura da borda da pop-up*/
+border-style: solid; /*Estilo da borda da pop-up*/
+background: #ccc; /*Cor de fundo da pop-up*/
+color: #000066; /*Cor do texto da pop-up*/
+display: none; /* Estilo da pop-up*/
+/*fim pop-up*/
+}

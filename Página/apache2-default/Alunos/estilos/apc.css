@@ -1,0 +1,89 @@
+@charset "utf-8";
+/*.BODY {
+background : #FFFFFF; 
+font : 12px Verdana, Geneva, Arial, Helvetica, sans-serif; 
+color : #666666;
+
+}*/
+
+body{
+	background-color:#E6E8FA;
+	border:0px;
+	margin:0px;
+	margin-top:10px;
+	padding:0px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#555;
+	font-weight:normal;
+	text-align:justify;
+}
+
+#corpo{
+	width: 1000px;
+	height:auto;
+	margin: auto;
+}
+
+#divtop {
+	position:absolute;
+	left:300px;
+	top:2px;
+	width:300px;
+	height:60px;
+	z-index:1;
+}
+#divcentral {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	word-spacing: 2px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	margin-top: 5px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	margin-left: 40px;
+}
+
+
+#login{
+    background-color:#D8D8BF;
+    width: 770px;
+    margin-left:10%;
+    height: 150px;
+    border: 1px double #666666;
+    text-align: center;
+	
+}
+
+#logol{
+	margin-top: 12px;
+	padding-top: 12px;
+	text-align: center;
+}
+
+
+#titulo{
+   font-size: 30px;
+   font-weight: bold;
+   text-align: center;
+}
+
+
+.textbox {	border: 1px solid #C6D3DA;
+	vertical-align: middle;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	}
+.style1 {
+	color: #000000;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+}
+.style3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}

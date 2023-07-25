@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:Calibri, Tahoma, Arial
+} 
+/********************************************
+              CENTRAL
+*********************************************/
+#geral{ 
+	width:1280px;
+	height:720px;
+	overflow:hidden; /* não apresenta barra de rolagem */
+	background-color:#ccc;
+	margin:0 auto;
+	
+} 
+
+/********************************************
+              botoes
+*********************************************/
+#botoes{ 
+	width:290px;
+	height:720px;
+	overflow:hidden; /* não apresenta barra de rolagem */
+	background-color:#9CF;
+	float:left;
+} 
+#botoes p{
+	padding-left:10px;
+	padding-right:10px;
+} 
+
+#botoes a:link{
+  color:#08233e;
+  font:2.4em Futura, 'Century Gothic', AppleGothic, sans-serif;
+  font-size:100%;
+  background-color:#CCC;
+  border:1px solid #999;
+  border-radius:5px;
+  padding:10px;
+  line-height:50px;
+  cursor:pointer;
+  text-decoration:none;
+  margin-left:5px;
+}
+#botoes a:visited{
+  color:#08233e;
+  font:2.4em Futura, 'Century Gothic', AppleGothic, sans-serif;
+  font-size:100%;
+  background-color:#CCC;
+  border:1px solid #999;
+  border-radius:5px;
+  padding:10px;
+  line-height:50px;
+  cursor:pointer;
+  text-decoration:none;
+  margin-left:5px;
+}
+#botoes a:hover{
+  color:#08233e;
+  font:2.4em Futura, 'Century Gothic', AppleGothic, sans-serif;
+  font-size:100%;
+  background-color:#099;
+  border:1px solid #999;
+  border-radius:5px;
+  padding:10px;
+  line-height:50px;
+  cursor:pointer;
+  text-decoration:none;
+}
+
+
+#botoes .button{
+  color:#08233e;
+  font:2.4em Futura, 'Century Gothic', AppleGothic, sans-serif;
+  font-size:100%;
+  width:50px;
+  height:50px;
+  margin-bottom:3px;
+  background-color:#CCC;
+  border:1px solid #999;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border-bottom:1px solid #9f9f9f;
+  -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+  -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+  cursor:pointer;
+ }
+
+#botoes .button:hover {
+  background-color:rgba(255,204,0,0.8);
+ }
+ 
+#botoes .button:active{
+  background-color:#096;
+ }
+
+
+/********************************************
+              questão
+*********************************************/
+#questao{ 
+	width:970px;
+	height:620px;
+	overflow:auto; /* apresenta barra de rolagem se necessario */
+	background-color:#FCC;
+	float:left;
+} 
+/********************************************
+              rodape
+*********************************************/
+.rodape{ 
+	width:970px;
+	height:100px;
+	overflow:hidden; /* não apresenta barra de rolagem */
+	background-color:#9C0;
+	float:left;
+} 

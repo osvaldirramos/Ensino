@@ -1,0 +1,3 @@
+Select IdCurso, IdTurma, IdAvaliador
+From fac_avaliacao FO, fac_avaliador FR
+where FO.IdAvaliacao = FR.idavaliacao

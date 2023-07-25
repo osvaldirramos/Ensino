@@ -1,0 +1,108 @@
+@charset "iso-8859-1";
+/* CSS Document */
+
+body{
+	font-family:Calibri, Tahoma, Arial
+} 
+
+.TabControl{ 
+	width:100%;
+	overflow:hidden; 
+	height:100%;
+} 
+
+.TabControl #header{ 
+	width:100%; 
+	/*border: solid 1px; */
+	overflow:hidden; 
+	cursor:hand
+} 
+.TabControl #content{ 
+	width:100%; 
+	border: solid 1px;
+	overflow:hidden; 
+	height:100%;
+	background-color:#EAEAEA;
+} 
+
+.TabControl .abas{
+	display:inline;
+} 
+
+.TabControl .abas li{
+	float:left
+} 
+
+.aba{
+	width:300px; 
+	height:20px; 
+	border:solid 1px; 
+	border-radius:5px 5px 0 0; 
+	text-align:center; 
+	padding-top:5px; 
+	background:#B9DAEB;
+} 
+.aba:hover{
+	background:#069;
+} 
+
+
+.ativa{
+	width:200px; 
+	height:30px; 
+	border:solid 1 px; 
+	border-radius:5px 5px 0 0; 
+	text-align:center; 
+	padding-top:5px; 
+	background:27408B;
+	} 
+	
+.ativa span{
+	color:#fff;
+	text-decoration:underline;
+} 
+
+.selected span{
+	color:#fff;	
+} 
+.selected{
+	width:200px; 
+	height:30px; 
+	border:solid 1 px; 
+	border-radius:5px 5px 0 0; 
+	text-align:center; 
+	padding-top:5px; 
+	background:#588BB5;
+}
+.TabControl .conteudo{
+	width:100%; 
+	background:#EAEAEA;
+	display:none; 
+	height:100%;
+	color:#000;
+	overflow:auto;
+} 
+
+.conteudo p{
+	font-size:16px;
+	margin-left:15px;
+} 
+
+
+.TabControl .conteudo .botoes{
+	background-color:#9C6;
+	width:100%; 
+	display:none; 
+	height:100%;
+	color:#000;
+	overflow:hodden;
+	
+}
+
+.style1 {
+	color: #000000;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+}
+

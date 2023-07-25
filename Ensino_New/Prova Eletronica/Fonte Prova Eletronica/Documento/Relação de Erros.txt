@@ -1,0 +1,140 @@
+Execussão Prova do Curso CNS103  (PT-02) - 11/09/2015 (Osvaldir/Mansano/Marcos)
+
+Aplicação da Proca PT-02 do Curso CNS103, Participantes 8 Alunos
+
+//--- Aplicação Prova Aluno
+
+=> Imagem pequena com má definição, proposta para permitir que o aluno aumente a figura
+
+=> Discução da Prova, colocar o numero original do item para que o aluno possa indicar ao Fiscal para que este posicione no item.
+[][][][]
+
+
+
+
+Execussão Prova do Curso CNS103  (PT-01) - 28/08/2015 (Osvaldir/Roberto/Sergio Perez)
+
+Aplicação da Proca PT01 do Curso CNS103, Participantes 8 Alunos
+
+//--- Acesso
+
+=> Criar mais um status para criação da prova.
+
+=> A Impressão das senhas feita logo após a montagem da prova não esta correta, 
+Solução para aplicação da prova: foi feita impressão da relação pela opção de impressão de relatório.
+
+//--- Aplicação Prova Aluno
+
+=> Nomes com apostrofe " ' " não esta identificando o aluno, não completando o select
+
+=> Não esta permitindo alterar reposta selecionada errada
+
+=> Mostrar o tempo decorrente da prova ao invés da hora sujestão feita pelo Fiscal da Prova, isto facilita 
+o controle de tempo do Aluno.
+
+=> Abaixar o texto da prova colocando uma linha em branco entre o cabeçalho e o enunciado da questão.
+
+=> Ajustar o video automaticamente para 1600 x 1200
+
+=> O Video que não conseguir ajustar por causa de resolução de tela deverá diminuir a imagem aumentando a 
+area de resultados.
+
+//--- Aplicação Prova Instrutor
+
+=> O contador de questões apresentando a evolução da prova realizada pelo aluno esta apresentando um a 
+mais.
+
+
+
+
+
+==============================================================================================
+
+Teste realizado em 20/08/2015 (Osvaldir/Marcos/Roberto)
+Participantes
+   Cel Souza
+   TCel Campos
+   Maj Geovani
+   Maj George
+   Cap Euripedes
+   Cap Romualdo
+   Cap Nelson
+   Cap Sergio Perez
+   Ten Chiquito
+   Ten Ivana
+   1S Lopes
+
+//--- Conta de Acesso
+
+=> Necessidade da Criação da Conta AVL para rodar somente a Prova
+
+------  Modulo Aluno - Aplicacao da Prova ------
+
+=> Verificar o modulo que gera a senha de acesso
+
+=> A Inicialização da Prova deverá ser feita pelo instrutor após a discução pressionando botão 
+    para "Iniciar a Prova"
+
+=> Tirar a bolina, mantendo somente a letra.
+
+=> Colocar a lista de respostas no Rodape e diminuir a letra
+
+=> Não permitir que aluno inicia a prova de outro no decorrer da prova
+
+------ Modulo Aluno Discussão da Prova ------
+
+=> Programa esta dando erro ao startar
+
+
+==========================================================================================================
+Teste realizado em 13/08/2015 (Osvaldir/Roberto)
+Participantes
+   Maj George
+   Cap Romualdo
+   Cap Nelson
+   SO Moises
+   SO Brandão
+   1S Lopes
+
+   
+------ Modulo do Instrutor - Aplicação da Prova ------
+
+=> Atualizar as informações do acompanhamento da Prova (O Sistema não esta atualizando) "ok"
+
+=> Não esta apresentando o tempo de prova quando o status Aplicação esta em "ANDAMENTO" (Deve mostrar 
+o Inicio e o Termino da Prova)
+
+=> Ajustar a tela automaticamente para apresentar o modulo de acompanhamento de a prova.      "ok"
+
+=> Criar modulo para encerrar a prova do aluno quando este estiver colando
+
+=> Não permitir que este aluno participe da discussão da prova
+
+
+------  Modulo Aluno - Aplicacao da Prova ------
+
+=> Trocar a Primera recomendação para "1 - Esta prova contém #N questões."    			"ok"
+
+=> Ajustar a tela automaticamente para apresentar a prova.                     			"ok"
+
+=> Gerar senha para cada prova, a senha deverá apresentar grau de dificuldade.
+
+=> Mudar a cor onde esta a resposta, o azul dificulta a visualizacao.         		 	"ok"
+		
+=> Não permitir retornar para prova quando o aluno 'ENCERRAR' a prova.         			"ok"
+
+=> Permitir ao aluno acessar a Folha de Rosto a qualquer tempo da Prova       		 	"ok"
+
+=> Criar indicador para confirmar a leitura da Folha de rosto
+
+=> Recuperar as respostas do Aluno caso ocorra alguma falha                                      ok
+
+
+------ Modulo Aluno Discussão da Prova ------
+
+=> O Programa deverá posicionar no item que o Instrutor selecionou para discussão   		"ok"
+
+=> Apresentar o resultado no Gabarito de Certo ou errado   		              		"ok"
+
+
+

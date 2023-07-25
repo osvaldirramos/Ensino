@@ -1,0 +1,97 @@
+/******************************************************************************/
+/**** FAC_AVALIACAO
+/******************************************************************************/
+
+CREATE TABLE FAC_AVALIACAO (
+    IDCURSO        SMALLINT NOT NULL,
+    IDTURMA        INTEGER NOT NULL,
+    IDAVALIACAO    INTEGER NOT NULL,
+    IDFICHA        SMALLINT NOT NULL,
+    DATAAVALIACAO  DATE,
+    IDUSUARIOICEA  VARCHAR(12)
+);
+
+ALTER TABLE FAC_AVALIACAO ADD CONSTRAINT PK_FAC_AVALIACAO PRIMARY KEY (IDCURSO, IDTURMA, IDAVALIACAO);
+ALTER TABLE FAC_AVALIACAO ADD CONSTRAINT UNQ_FAC_AVALIACAO UNIQUE (IDAVALIACAO);
+
+
+/******************************************************************************/
+/**** FAC_AVALIADOR
+/******************************************************************************/
+
+CREATE TABLE FAC_AVALIADOR (
+    IDAVALIACAO  INTEGER NOT NULL,
+    IDAVALIADOR   CHAR(20) NOT NULL,
+    RESPONDEU    CHAR(1) NOT NULL
+);
+
+ALTER TABLE FAC_AVALIADOR ADD CONSTRAINT PK_FAC_AVALIADOR PRIMARY KEY (IDAVALIACAO, IDAVALIADOR);
+ALTER TABLE FAC_AVALIADOR ADD CONSTRAINT FK_FAC_AVALIADOR FOREIGN KEY (IDAVALIACAO) REFERENCES FAC_AVALIACAO (IDAVALIACAO) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+/******************************************************************************/
+/****  FAC_AVALIADO
+/******************************************************************************/
+
+CREATE TABLE FAC_AVALIADO (
+    IDAVALIACAO  INTEGER NOT NULL,
+    IDAVALIADO   SMALLINT NOT NULL,
+    IDENTIDADE   CHAR(20),
+    DISCIPLINA   VARCHAR(6)
+);
+
+ALTER TABLE FAC_AVALIADO ADD CONSTRAINT PK_FAC_AVALIADO PRIMARY KEY (IDAVALIACAO, IDAVALIADO);
+ALTER TABLE FAC_AVALIADO ADD CONSTRAINT FK_FAC_AVALIADO FOREIGN KEY (IDAVALIACAO) REFERENCES FAC_AVALIACAO (IDAVALIACAO) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+
+/******************************************************************************/
+/**** FAC_Resposta
+/******************************************************************************/
+
+CREATE TABLE FAC_RESPOSTA (
+    IDAVALIACAO  INTEGER NOT NULL,
+    IDAVALIADOR   CHAR(20) NOT NULL,
+    IDFICHA      SMALLINT NOT NULL,
+    IDTOPICO     SMALLINT NOT NULL,
+    RESPOSTA     INTEGER NOT NULL
+);
+
+ALTER TABLE FAC_RESPOSTA ADD CONSTRAINT PK_FAC_RESPOSTA PRIMARY KEY (IDAVALIACAO, IDFICHA, IDTOPICO);
+ALTER TABLE FAC_RESPOSTA ADD CONSTRAINT FK_FAC_RESPOSTA FOREIGN KEY (IDAVALIACAO, IDAVALIADOR) REFERENCES FAC_AVALIADOR (IDAVALIACAO, IDAVALIADOR) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+/******************************************************************************/
+/**** FAC_COMENTARIO
+/******************************************************************************/
+
+CREATE TABLE FAC_COMENTARIO (
+    IDAVALIACAO  INTEGER NOT NULL,
+    IDAVALIADOR   CHAR(20) NOT NULL,
+    COMENTARIO   INTEGER NOT NULL
+);
+
+ALTER TABLE FAC_COMENTARIO ADD CONSTRAINT PK_FAC_COMENTARIO PRIMARY KEY (IDAVALIACAO, IDAVALIADOR, IDAVALIADO);
+ALTER TABLE FAC_COMENTARIO ADD CONSTRAINT FK_FAC_COMENTARIO FOREIGN KEY (IDAVALIACAO, IDAVALIADOR) REFERENCES FAC_AVALIADOR (IDAVALIACAO, IDAVALIADOR) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+
+/******************************************************************************/
+/
+/**** VIEWS
+/
+/******************************************************************************/
+
+
+CREATE VIEW FAC_USUARIO_VIEW(
+    IDCURSO,
+    IDTURMA,
+    IDAVALIACAO,
+    IDUSUARIOICEA,
+    NOME,
+    SENHA)
+AS
+select a.IdCurso, a.IdTurma, a.IdAvaliacao, a.idusuarioicea, u.Nome, u.senha
+From usuario u, FAC_Avaliacao A
+where u.idCodigo = a.idusuarioicea
+;

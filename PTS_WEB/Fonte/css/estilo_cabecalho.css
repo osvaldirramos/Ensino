@@ -1,0 +1,459 @@
+*{
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  body{
+    background: #f5f5f5;
+    font-family: monospace;
+    padding-bottom: 90px;
+    margin: 0px;
+  }
+
+  #principal{
+      background-color: rgb(235, 234, 234); 
+      top: 125px;  
+      width: 291px;
+      left: 25px;  
+  }  
+
+  .Label{
+    font-size: 12px;
+    font-family: 'Roboto';
+  }
+
+   /*--- Cabecalho ---*/ 
+  
+  #cabecalho{
+    background-color: #039be5;
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto';
+    /* width: 400px; */
+    width: 100%;
+    height: 135px;
+    top: 210;
+	
+  }
+
+  
+  th.cabec_Left {
+    font-size: 15px;
+    font-family: 'Roboto';
+    text-align: left;
+    width: 70px;
+	  white-space: nowrap;
+  }
+  
+  th.cabec_Center {
+    padding: 2px;
+    font-size: 15px;
+    font-family: 'Roboto';
+    text-align: center;
+    width: 70px;
+	  white-space: nowrap;
+  }
+
+
+
+
+  
+  /* Tratamento dos Botoes */
+
+  a.Msg1 {
+    font-size: 20px;
+    font-family: 'Roboto';
+    color: #1E90FF;
+    border-radius: 4px;
+
+    padding: 5px;
+    text-align: center;
+    width: 100%;   
+  }
+
+  a.BtnAtualizarBrac {
+    font-size: 15px;
+    font-family: 'Roboto';
+    background-color:#039be5;
+    color: white;
+    border-radius: 4px;
+	border: 1px solid #999;
+    padding: 8px;
+    text-align: center;
+    width: 90px;   
+  }
+  
+  
+  a.BtnExcluir {
+    font-size: 15px;
+    font-family: 'Roboto';
+    background-color:red;
+    color: white;
+    border-radius: 4px;
+	border: 1px solid #999;
+    padding: 8px;
+    text-align: center;
+    width: 90px;
+  }
+
+  a.BtnOutros {
+    font-size: 15px;
+    font-family: 'Roboto';
+    background-color: #83473a;
+    color: white;
+    border-radius: 4px;
+	border: 1px solid #999;
+    padding: 8px;
+    text-align: center;
+    width: 100px;      
+  }
+  
+  a.BtnOutrosLong {
+    font-size: 15px;
+    font-family: 'Roboto';
+    background-color: #eb2b00;
+    color: white;
+    border-radius: 4px;
+	border: 1px solid #999;
+    padding: 8px;
+    text-align: center;
+    width: 180px;      
+  }
+
+  a.BtnLink {
+    font-size: 15px;
+    font-family: 'Roboto';
+    background-color: white;
+    color: #000080;
+  }
+
+  /* CSS Buttons: http://www.web4site.de/css/css-buttons.php */
+
+.button {
+  text-align: center;
+  padding:0;
+  margin:0;
+  border:none;
+  font-size:19px;
+  background-color:#1E90FF;
+  color: white;
+  height:36px;
+  width:134px; 
+  font-family: 'Roboto';
+  font-variant:small-caps;
+  border-radius: 4px;
+}
+
+.button:hover {
+  text-align: center;
+  padding:0;
+  margin:0;
+  border:none;
+  font-size:19px;
+  background-color:#1E90FF;
+  color: #c0c0c0;
+  height:36px;
+  width:134px; 
+  font-family: 'Roboto';
+  font-variant:small-caps;
+  border-radius: 4px;
+}
+
+.button_active {
+  text-align: center;
+  padding:0;
+  margin:0;
+  border:none;
+  font-size:14px;
+  background-color:#1E90FF;
+
+  color: #c0c0c0;
+  height:36px;
+  width:134px; 
+  font-family: 'Roboto';
+  font-variant:small-caps;
+  border-radius: 4px;
+}
+
+
+/*--- Cabecalho ---*/
+  
+#cabecalho{
+  /*background-color: #039be5;*/
+  background-color: red;
+  color: white;
+  font-size: 22px;
+  font-family: 'Roboto';  
+  /* width: 400px; */
+  width: 100%;
+  height: 80px;
+  top: 0;
+}
+
+  #cabecalho_Est_01{
+    color: white;
+    font-size: 18px;
+    font-family: 'Arial';
+  
+    /* width: 400px; */
+    width: 580px;
+    height: 25px;
+    top: 210;
+  }
+
+  #cabecalho_Est_02{
+    color: white;
+    font-size: 18px;
+    font-family: 'Arial';
+  
+    /* width: 400px; */
+    width: 280px;
+    height: 25px;
+    top: 210;
+  }
+  
+  #fader {
+  opacity: 0.5;
+  background: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}  
+
+#spinner-overlay {
+    background-color: #aaa;
+    opacity: 0.4;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url('../image/ajaxSpinner.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+  #cabecalho_Est_03{
+    color: black;
+    font-size: 15px;
+    font-family: 'Arial';
+  
+    /* width: 400px; */
+    width: 280px;
+    height: 25px;
+    top: 210;
+  }
+
+  .td_MC {
+    font-size: 13px;
+    border: 0px solid #999;
+    background: #1E90FF;
+    padding: 15px; 
+    text-align: center;
+    width: 100%;
+    height: 40;
+  }
+
+
+  
+
+
+ 
+  #cabecalho_Menu{
+    color: white;
+    font-size: 28px;
+    font-family: 'Arial';
+  
+    /* width: 400px; */
+    width: 280px;
+    height: 25px;
+    top: 210;
+  }
+
+  
+  .estatistica{
+    background:  rgb(235, 234, 234); 
+    font-size: 20px;
+    font-family: 'Roboto';
+    color: info;
+    border-radius: 1px;
+    padding: 10px; 
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 330px;
+    width: 900px;   
+  }
+  
+  /* Tratamento do Menu */
+ 
+  
+  .menu-icon{
+    position: fixed;
+    font-size: 55px;
+    font-weight: bold;
+    padding: 5px;
+    width: 40px;
+    height: 62px;
+    text-align: center;
+    background-color:  #1E90FF;
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s;
+    left: 0;
+    top: 0;
+  }
+  
+  .menu-icon:hover{
+    background-color: red;
+    color:  #1E90FF;
+  }
+  
+  .menu{
+    color: white;
+    font-size: 28px;
+    font-family: 'Arial';
+  
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    top: 0;
+
+  }
+
+  ul{
+    list-style: none;
+  }
+  
+  ul li Menu{
+    background-color: white;
+    display: block;
+    font-size: 18px;
+    font-family: 'Arial';
+    padding: 10px;
+    border-bottom: solid 1px green;
+    color: black;
+    text-decoration: none;
+    transition: all .2s;
+  }
+
+  
+  ul li span{
+    float: right;
+    padding-right: 10px;
+  }
+
+  /*---- Marcador do Menu ----*/
+
+  ul li a:hover{
+    background-color: #039be5;
+  }
+ 
+    
+  /* Grid Item */
+  
+  h1 {
+      text-align: left;
+      font-size: 2em;
+      font-weight: normal;
+  }
+  
+  th.cabec_Left {
+    font-size: 15px;
+    font-family: 'Roboto';
+    text-align: left;
+    width: 70px;
+	  white-space: nowrap;
+  }
+  
+  th.cabec_Center {
+    padding: 2px;
+    font-size: 15px;
+    font-family: 'Roboto';
+    text-align: center;
+    width: 70px;
+	  white-space: nowrap;
+  }
+
+  td {
+    padding: 1px;
+    border: 0px solid #999;
+
+    font-size: 15px;
+    font-family: 'Roboto';
+
+    /*background: #1E90FF;  */
+    text-align: center;
+    width: 100%;
+    height: 2px;
+	  white-space: nowrap;
+  } 
+   
+
+  td.td_PTS {
+    text-align: center;
+    background: #999;
+    width: 70px;
+   }
+
+   td.td_cabec_Center {
+    background: white;
+
+    text-align: center;
+    width: 70px;
+   }
+
+  
+  td.td_cabec_Left {
+    background: white;
+    text-align: left;
+    width: 70px;
+  }
+  
+  td.td_cabecBotao {
+    width: 40px;
+    border: 1px solid #999;
+    background:white;
+    text-align: left;
+  }
+
+  td.td_cabec_Botao {
+    width: 70px;
+  	height: 100%;
+	  font-size: 21px;
+    font-family: 'Roboto';
+	  border: 0px solid #999; 
+    background: brown;
+    text-align: center;
+  }
+
+  .td_cabec_Menu {
+    border: 0px solid #999;
+    text-align: center;
+    background: #039be5; 
+  }
+
+  
+  td.td_cabec1 {
+    /*border: 0px solid #999;*/
+    padding: 10px;
+    text-align: left;
+    width: 50px;
+    height: 5px;
+    vertical-align: middle;
+  }
+  
+  td.td_cabec2 {
+    /* border: 0px solid #999; */
+    
+    height: 5px;
+    vertical-align: middle;
+    text-align: left;
+    width: 100%;
+	  font-size: 24px;
+    font-family: 'Roboto';
+  }

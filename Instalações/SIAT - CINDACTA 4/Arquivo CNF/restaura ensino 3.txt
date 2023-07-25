@@ -1,0 +1,12 @@
+gbak -R  -USER SYSDBA -PASSWORD u2u6#icea BD_Ensino.fbk BD_Ensino.gdb
+gbak -R  -USER SYSDBA -PASSWORD u2u6#icea BD_Historico_Ensino.fbk BD_Historico_Ensino.gdb
+
+gbak -R  -USER SYSDBA -PASSWORD u2u6#icea BD_Historico_SGEW.fbk BD_Historico_SGEW.gdb
+gbak -R  -USER SYSDBA -PASSWORD u2u6#icea BD_PLN.fbk BD_PLN.gdb
+gbak -R  -USER SYSDBA -PASSWORD u2u6#icea Logs_ensino.fbk Logs_ensino.gdb
+gbak -R  -USER SYSDBA -PASSWORD u2u6#icea Manual.fbk Manual.gdb
+
+
+
+
+

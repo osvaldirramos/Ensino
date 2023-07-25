@@ -1,0 +1,194 @@
+<HTML>
+<HEAD>
+ <TITLE>Cadastro de alunos</TITLE>
+<link href="../External/estilos/estilo.css" rel="stylesheet" type="text/css">
+<link  href="dhtmlgoodies_calendar/dhtmlgoodies_calendar.css?random=20051112" type="text/css" rel="stylesheet" media="screen">
+<SCRIPT type="text/javascript" src="dhtmlgoodies_calendar/dhtmlgoodies_calendar.js?random=20060118"></script>
+
+</HEAD>
+<BODY>
+<form method="POST" name="cadastroAluno" action="../Controller/AlunoController.php">
+
+<div id="corpo">
+
+<br><br>
+<div id="titulo2">CENTRO DE INSTRUÇÃO E ADAPTAÇÃO DA AERONÁUTICA <br>
+DIVISÃO DE ENSINO<br><br>
+
+FORMULÁRIO DE CADASTRO DE ALUNOS </div>
+
+<br><br>
+
+<table border="0" width="100%">
+<tr>  <td>Curso <select size="1" name="curso"></select> </td>  <td>Turma <select size="1" name="turma"></select></td> <td> Ano <select size="1" name="ano"></select></td></tr>
+</table>
+
+<br>
+
+<!-- Div com os dados pessoais do aluno -->
+<div id="cabecalho2">Dados Pessoais</div>
+<div><table id="tabela1" border="0" width="100%" cellspacing="5" >
+<tr >
+  <td colspan="1">&nbsp;Nome <input type="text" name="nome" size="30"></td>
+  <td colspan="2"> &nbsp;Nome de Guerra <input type="text" name="nomeGuerra" size="15"></td>
+  <td colspan="2">&nbsp;Identidade <input type="text" size="15" name="identidade"></td>
+
+</tr>
+<tr>
+
+  <td>&nbsp;Saran <input type="text" size="20" name="saran"></td>
+
+</tr>
+<tr>
+  <td width="300">&nbsp;Data de Nascimento<input type="text" name="dataNascimento" size="10"><input type="button" value="Botão" onclick="displayCalendar(document.forms[0].dataNascimento,'dd/mm/yyyy',this)"></td>
+  <td>&nbsp;CPF <input type="text" name="cpf" size="15"></td>
+  <td width="60">&nbsp;Sexo</td>
+  <td>
+    <select size="1" name ="sexo" >
+     <option value="M">Masculino</option>
+     <option value="F">Feminino</option>
+    </select> </td>
+  <td width="140">&nbsp;</td>
+</tr>
+<tr>
+  <td>&nbsp;Estado Civil
+     <select size="1" name="estadoCivil">
+       <option value="Solteiro">Solteiro</option>
+       <option value="Casado">Casado</option>
+       <option value="Divorciado">Divorciado</option>
+       <option value="Viúvo">Viúvo</option>
+     </select>
+   </td>
+  <td colspan="2">
+   <table border="0" id="tabela2" width="100%">
+       <tr>
+           <td>&nbsp;Naturalidade</td>
+       </tr>
+       <tr>
+           <td>&nbsp;Cidade <input type="text" name="cidadeNat" size="15"> UF <input type="text" name="ufNat" size="5"></td>
+       </tr>
+   </table>
+  </td>
+  <td colspan="2">&nbsp;Especialidade  <input type="text" size="15" name="especialidade"></td>
+</tr>
+<tr>
+  <td colspan="4">&nbsp;Telefone <input type="text" name="telResidencial" size="12"> Telefone de Contato <input type="text" name="telContato" size="12">Celular <input type="text" name="celular" size="12"></td>
+</tr>
+<tr>
+  <td colspan="3">&nbsp;Email <input type="text" name="email" size="40"></td>
+</tr>
+
+</table>
+</div>
+
+<br>
+
+<!-- Div com os dados de filiaçao  -->
+<div id="cabecalho2">Filiação</div>
+<div> <table id="tabela1"  width="100%" cellspacing="5" >
+         <tr><td width="30">&nbsp;Pai </td><td><input type="text" size="40" name="pai"></td>
+             <td width="30">&nbsp;Mãe </td><td><input type="text" size="40" name="mae"></td>
+         </tr>
+      </table>
+</div>
+<br>
+<!-- Div com os dados de endereço  -->
+<div id="cabecalho2">Endereço</div>
+<div> <table id="tabela1"border="0" width="100%">
+<tr>
+  <td colspan="3">&nbsp;Endereço <input type="text" size="70" name="endereco"></td>
+  <td >&nbsp;Bairro <input type="text" size="20" name="bairro"></td>
+</tr>
+<tr>
+  <td>&nbsp;Cidade <input type="text" size="20" name="cidade"></td>
+  <td>&nbsp;UF <input type="text" size="5" name="uf"></td>
+  <td>&nbsp;CEP <input type="text" size="20" name="cep"></td>
+  <td>&nbsp;País <input type="text" size="20" name="pais" value="BRASIL"> </td>
+</tr>
+</table>
+</div>
+<br>
+
+<!-- Div com os dados bancários  -->
+<div id="cabecalho2">Dados Bancários</div>
+<div> <table id="tabela1" border="0" width="100%" cellspacing="5" >
+<tr>
+  <td>&nbsp;Banco <input type="text" size="20" name="nomeBanco"></td>
+  <td>&nbsp;Nº Banco <input type="text" size="5" name="numeroBanco"></td>
+</tr>
+<tr>
+  <td>&nbsp;Agência <input type="text" size="7" name="agencia"></td>
+  <td>&nbsp;Conta Corrente <input type="text" size="8" name="conta"></td>
+  <td>&nbsp;Cidade <input type="text" size="20" name="cidadeBanco"> UF <input type="text" size="5" name="ufBanco"></td>
+</tr>
+</table>
+</div>
+<br>
+
+<!-- Div com os dados de situaçao anterior  -->
+<div id="cabecalho2">Situação Anterior</div>
+<div> <table id="tabela1" border="0" width="100%" cellspacing="5" >
+<tr>
+  <td>&nbsp;Civil<input type="radio" name="situacao"> Militar<input type="radio"name="situacao"> </td>
+  <td>&nbsp;Força
+   <select size="1" name="forca">
+    <option value="Exército">Exército</option>
+    <option value="Marinha">Marinha</option>
+    <option value="Aeronáutica">Aeronáutica</option>
+    <option value="Forças Auxiliares">Forças Auxiliares</option>
+   </select>
+  </td>
+
+  <td colspan="2">&nbsp;Data de Praca <input type="text" size="20" name="dataPraca"></td>
+
+</tr>
+<tr>
+ <td>&nbsp;Posto Graduação <input type="text" size="12" name="postoGraduacao"></td>
+</tr>
+<tr>
+  <td>&nbsp;Em que força se alistou?
+    <select size="1" name="alistamento">
+     <option value="Exército">Exército</option>
+     <option value="Marinha">Marinha</option>
+     <option value="Aeronáutica">Aeronáutica</option>
+   </select>
+
+  </td>
+  <td>&nbsp;Dispensado?
+   <select size="1" name="dispensado">
+    <option value="N">Não</option>
+    <option value="S">Sim</option>
+   </select>
+  </td>
+  <td>&nbsp;Data do Alistamento <input type="text" size="12" name="dataAlistamento"></td>
+
+</tr>
+<tr>
+  <td>&nbsp;Data da Incorporacao <input type="text" size="12" name="dataIncorporacao1"></td>
+  <td width="200">&nbsp;</td>
+  <td>&nbsp;Data do Desligamento <input type="text" size="12" name="dataDesligamento1"></td>
+</tr>
+<tr>
+  <td>&nbsp;Data da Incorporacao <input type="text" size="12" name="dataIncorporacao2"></td>
+  <td width="200">&nbsp;</td>
+  <td>&nbsp;Data do Desligamento <input type="text" size="12" name="dataDesligamento2"></td>
+</tr>
+<tr>
+  <td>&nbsp;Data da Incorporacao <input type="text" size="12" name="dataIncorporacao3"></td>
+  <td width="200">&nbsp;</td>
+  <td>&nbsp;Data do Desligamento <input type="text" size="12" name="dataDesligamento3"></td>
+</tr>
+</table>
+</div>
+
+
+<input type="submit" value="Enviar">
+
+
+</div>
+
+</form>
+
+
+</BODY>
+</HTML>

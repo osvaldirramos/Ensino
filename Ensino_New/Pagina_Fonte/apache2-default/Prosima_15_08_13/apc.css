@@ -1,0 +1,117 @@
+@charset "utf-8";
+/*.BODY {
+background : #FFFFFF; 
+font : 12px Verdana, Geneva, Arial, Helvetica, sans-serif; 
+color : #666666;
+
+}*/
+
+body{
+
+	background-color:#F4F4F4;
+
+	border:0px;
+
+	margin:0px;
+
+	margin-top:10px;
+
+	padding:0px;
+
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+
+	font-size:10px;
+
+	color:#555;
+
+	font-weight:normal;
+
+	text-align:justify;
+
+}
+
+.button{
+border:1px solid #34740e; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; text-align: center; color: #FFFFFF; background-color: #4ba614;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#4ba614), to(#008c00));
+ background-image: -webkit-linear-gradient(top, #4ba614, #008c00);
+ background-image: -moz-linear-gradient(top, #4ba614, #008c00);
+ background-image: -ms-linear-gradient(top, #4ba614, #008c00);
+ background-image: -o-linear-gradient(top, #4ba614, #008c00);
+ background-image: linear-gradient(to bottom, #4ba614, #008c00);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#4ba614, endColorstr=#008c00);
+}
+
+.button:hover{
+ border:1px solid #224b09; background-color: #36780f;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#36780f), top(#005900));
+ background-image: -webkit-linear-gradient(top, #36780f, #005900);
+ background-image: -moz-linear-gradient(top, #36780f, #005900);
+ background-image: -ms-linear-gradient(top, #36780f, #005900);
+ background-image: -o-linear-gradient(top, #36780f, #005900);
+ background-image: linear-gradient(to bottom, #36780f, #005900);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#36780f, endColorstr=#005900);
+}
+
+
+#corpo{
+	width: 770px;
+	height:auto;
+	margin: auto;
+}
+#divtop {
+	position:absolute;
+	left:300px;
+	top:2px;
+	width:300px;
+	height:60px;
+	z-index:1;
+}
+#divcentral {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	word-spacing: 2px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	margin-top: 5px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	margin-left: 40px;
+}
+
+
+#login{
+	width: 770px;
+	height: 150px;
+	border: 1px double #666666;
+	text-align: center;
+	
+}
+#logol{
+	margin-top: 12px;
+	padding-top: 12px;
+	text-align: center;
+}
+
+
+#titulo{
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+}
+
+
+.textbox {	border: 1px solid #C6D3DA;
+	vertical-align: middle;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	}
+.style1 {
+	color: #000000;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+}
+.style3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}

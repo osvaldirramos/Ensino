@@ -1,0 +1,5 @@
+ATM005    TESTE          ABDIAS              CV JOÃO BATISTA PINTO DE FIGUEIREDO NETO                                                                                     8,5
+ATM005    TESTE          ADRIANO             CV ADRIANO MONOMI                                                                                                            7,45
+ATM005    TESTE          EDUARDO             CV EDUARDO FREIRE DA SILVA                                                                                                   10
+ATM005    TESTE          FRANCISCO           CV APARECIDO FRANCISCO DE SOUZA                                                                                              9,
+ATM005    TESTE          DEMÉTRIO            3S DEMÉTRIO RAMOS DOS REIS SOARES                                                                                            8
